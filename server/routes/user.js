@@ -1,0 +1,21 @@
+const express = require("express")
+const route = express.Router()
+const  userCtrl  =require("../controller/userCtrl")
+const auth = require("../middleware/user.middleware")
+const authAdmin = require("../middleware/admin.middlware")
+
+route.post("/register", userCtrl.register )
+route.post("/emailVerify", userCtrl.verification )
+route.post("/login", userCtrl.login )
+route.post("/forgot", userCtrl.forgotPassword)
+route.post("/reset",auth, userCtrl.resetPassword)
+route.get("/profile/:userId",auth, userCtrl.getUserInfor)
+route.get("/getUser",auth, userCtrl.getUser)
+route.get("/getAllUser", userCtrl.getUsersAllInfor)
+route.put("/update", auth, userCtrl.updateUser)
+
+route.put("/updateRole/:id", auth, authAdmin, userCtrl.updateUserRole)
+route.delete("/deleteUser/:id", auth, authAdmin, userCtrl.deleteUser)
+route.get("/admin/adminUsers", auth, authAdmin, userCtrl.getAdminUsers)
+route.get("/admin/adminStats", auth, authAdmin, userCtrl.getAdminStats)
+module.exports = route
