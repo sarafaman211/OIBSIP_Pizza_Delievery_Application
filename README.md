@@ -1,4 +1,4 @@
-# OIBSIP_Pizza_Delievery_Application
+# OIBSIP_Pizza_Delivery_Application
 Full Stack Pizza Delievery Application
 
 ## Available Scripts
@@ -39,7 +39,7 @@ Make sure you have all the credentials
 MONGO_URI, CLIENT_URL, TOKEN_KEY, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REFRESH_TOKEN, Razorpay Key and Secret
 
 ### `Video Demo` : -
-https://github.com/sarafaman211/OIBSIP_Pizza_Delievery_Application/assets/94362952/9d191858-98e1-4c6f-a896-b026402d378f
+https://github.com/sarafaman211/OIBSIP_Pizza_Delivery_Application/assets/94362952/9d191858-98e1-4c6f-a896-b026402d378f
 
 
 
